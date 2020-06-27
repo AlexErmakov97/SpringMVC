@@ -11,13 +11,13 @@
     	http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan base-package="ru.alishev.springcourse"/>
+    <context:component-scan base-package="ru.springmvc"/>
 
     <mvc:annotation-driven/>
 
     <bean id="templateResolver" class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">
-        <property name="prefix" value="/WEB-INF/views/"/>/*здесь находятся представления(шаблоны)*/
-        <property name="suffix" value=".html"/>/*расширение представлений*/
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".html"/>
     </bean>
 
     <bean id="templateEngine" class="org.thymeleaf.spring5.SpringTemplateEngine">
